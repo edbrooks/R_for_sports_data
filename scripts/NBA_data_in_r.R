@@ -3,28 +3,18 @@
 #Remove the '#' symbol at the beginning of the line to allow code to run 
 #Don't remove the '#' if the line is for a comment (this allows r to skip over)
 
- # #Install or load the required packages
- # install.packages("dplyr", #wrangle data using dplyr
- #                 "ggplot2",#visualise/plot data using ggplot2
- #                 "readr",#read in data
- #                 "here") #here helps to organise projects in r - easily locate csv
+
+#Install the required packages if you have not used them before
+install.packages("dplyr", #wrangle data using dplyr
+                "ggplot2",#visualise/plot data using ggplot2
+                "readr",#read in data
+                "here") #here helps to organise projects in r - easily locate csv
 
 #If you have previously installed these packages use library to load them
 library("dplyr",
         "ggplot2",
         "readr",
         "here")
-# #Install or load the required packages
-# install.packages("dplyr", #wrangle data using dplyr
-#                 "ggplot2",#visualise/plot data using ggplot2
-#                 "readr",#read in data
-#                 "here") #here helps to organise projects in r - easily locate csv
-
-# #If you have previously installed these packages use library to load them
-# library("dplyr", 
-#         "ggplot2", 
-#         "readr",
-#         "here")
 
 #Import the data into the environment
 NBA <- readr::read_csv("data/NBA_2017-18_AdvancedStats_Salary.csv", col_names = TRUE)
@@ -129,16 +119,12 @@ xlim (c(0, 35)) + ylim(c(0,35))
 #Create an alternative ggplot to assist with readability
 ggplot <- ggplot(NBA_filtered %>% filter(Tm == "GSW") %>% arrange(desc(PER)), aes(x = Player, y = PER), colour = Pos)
 
-#Create a ggplot using PER - Include a filter for Team (Tm)
-ggplot <- ggplot(NBA_filtered %>% filter(Tm == "CLE") %>% arrange(desc(PER)), aes(x = Player, y = PER), colour = Pos)
-
-#Print the ggplot with extra features
 ggplot +
-geom_col(aes(fill = Pos)) +
-theme_classic() +
-theme(axis.title.x = element_text(size = 14),
-      axis.title.y = element_text(size = 14)) +
-coord_flip()
+  geom_col(aes(fill = Pos)) +
+  theme_classic() +
+  theme(axis.title.x = element_text(size = 14),
+        axis.title.y = element_text(size = 14)) +
+  coord_flip()
 
 #Create a new ggplot filtering all the players with a PER over 22 and at least 10 Games
 ggplot <- ggplot(NBA_filtered %>% filter(PER > 23 & G > 20), aes(x = Player, y = PER, fill = Pos))
@@ -153,3 +139,7 @@ ggplot +
 
 #Highest player rating (PER)
 NBA_filtered %>% filter(Player == "James Harden")
+
+
+## Thanks to Meicher on Kaggle for the Public Dataset
+## https://www.kaggle.com/meicher/201718-advanced-player-metrics-salary
