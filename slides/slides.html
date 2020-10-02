@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>R for Sports Data</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Edward Brooks" />
+    <link rel="stylesheet" href="xaringan-themer.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# R for Sports Data
+## ⚽️ 🏀 🏈 ⚾️ 🥎 🎾 🏐 🏉
+### Edward Brooks
+
+---
+
+
+
+class: left, top
+# Why R?
+
+R is an incredibly versatile, free and open source programming language, 
+which is capable of performing a range of tasks that are useful when
+dealing with sports data. These include:
+
+- Importing data direct from an Athlete Management System
+- Scraping match or performance data from the web
+- Wrangling and cleaning data 
+- Calculating statistics
+- Visualising data in various forms
+- Building statistical models
+- Generating reproducible reports or presentations
+- Building web applications 
+
+&lt;img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/R_logo.svg/724px-R_logo.svg.png" width="20%" height=10% align="right" /&gt;
+---
+class: left, top
+
+# R &amp; RStudio
+&lt;center&gt;
+&lt;img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/R_logo.svg/724px-R_logo.svg.png" width="10%" height=5% align="center" /&gt;
+&lt;/center&gt;
+
+To download R to your laptop, go to the CRAN (comprehensive R archive network). To determine the closest mirror to you, follow this link to the *[cloud mirror](https://cloud.r-project.org)*. Download the version that is suitable for your operating system (e.g., Mac, Linux, Windows).
+
+&lt;center&gt;
+&lt;img src="https://i.stack.imgur.com/bUpIh.png" width="10%" height=5% align="center" /&gt;
+&lt;/center&gt;
+
+RStudio is an IDE (integrated development environment). To download it on your laptop, go to the *[RStudio website](http://www.rstudio.com/download)*. Download the version that is suitable for your operating system (e.g., Mac, Linux, Windows).
+---
+class: centre, top
+
+# Typical R Workflow
+
+&lt;img src="https://github.com/allisonhorst/stats-illustrations/raw/master/openscapes/environmental-data-science-r4ds-general.png" width="100%" height=50% align="middle" /&gt;
+
+---
+class: centre, top
+
+# Tidy Data
+
+&lt;img src="https://d33wubrfki0l68.cloudfront.net/b88ef926a004b0fce72b2526b0b5c4413666a4cb/24a30/cover.png" width="16%" height=8% align="right" /&gt;
+
+Tidy data formatting has 3 main principles. 
+
+These are:
+
+- Variables are in columns 
+- Observations are in rows
+- Values are in cells
+
+&lt;img src="https://d33wubrfki0l68.cloudfront.net/6f1ddb544fc5c69a2478e444ab8112fb0eea23f8/91adc/images/tidy-1.png" width="80%" height=40% align="bottom" /&gt;
+
+
+
+.footnote[[R for Data Science - ebook](https://r4ds.had.co.nz/)]
+
+---
+class: left, top
+
+# Classes of objects in R
+
+&lt;center&gt;
+&lt;img src="https://bookdown.org/rdpeng/rprogdatascience/cover_sm.png" width="18%" height=9% align="right" /&gt;
+&lt;/center&gt;
+There are five basic ("atomic") types of data that R recognises. 
+
+These are:
+
+- Character (e.g., words; "hello")
+
+- Factor (e.g., limited set options; "Female", "Male", "Non-binary")
+
+- Logical (e.g., true or false; "TRUE"/"T")
+
+- Numeric (e.g., real numbers; "6.2")
+
+- Integer (e.g., whole number; "6" - Note: use "L" to assign as integer)
+
+  *Complex (special uses - rarely needed) 
+
+.footnote[[R Programming for Data Science - ebook](https://bookdown.org/rdpeng/rprogdatascience/)]
+---
+class: centre, top
+
+# Data structures in R
+
+&lt;center&gt;
+&lt;img src="http://venus.ifca.unican.es/Rintro/_images/dataStructuresNew.png" width="80%" height=40% align="left" /&gt;
+&lt;/center&gt;
+
+---
+class: centre, top
+
+# Consistency in R
+
+&lt;center&gt;
+&lt;img src="https://github.com/allisonhorst/stats-illustrations/raw/master/other-stats-artwork/coding_cases.png" width="80%" height=40% align="left" /&gt;
+&lt;/center&gt;
+
+---
+class: centre, top
+
+# Packages and their Functions
+
+&lt;center&gt;
+&lt;img src="https://tidy-ds.wjakethompson.com/img/hex-stickers.png" width="70%" height=35% align="left" /&gt;
+&lt;/center&gt;
+
+---
+class: centre, top
+
+# {dplyr}
+&lt;img src="https://d33wubrfki0l68.cloudfront.net/621a9c8c5d7b47c4b6d72e8f01f28d14310e8370/193fc/css/images/hex/dplyr.png" width="20%" height=10% align="right" /&gt;
+
+&lt;center&gt;
+&lt;img src="https://github.com/allisonhorst/stats-illustrations/raw/master/rstats-artwork/dplyr_filter.jpg" width="80%" height=40% align="left" /&gt;
+&lt;/center&gt;
+---
+class: centre, top
+
+# {dplyr}
+&lt;img src="https://d33wubrfki0l68.cloudfront.net/621a9c8c5d7b47c4b6d72e8f01f28d14310e8370/193fc/css/images/hex/dplyr.png" width="20%" height=10% align="right" /&gt;
+
+&lt;center&gt;
+&lt;img src="https://github.com/allisonhorst/stats-illustrations/raw/master/rstats-artwork/dplyr_case_when.png" width="80%" height=40% align="left" /&gt;
+&lt;/center&gt;
+---
+class: centre, top
+
+# {janitor}
+&lt;img src="https://github.com/sfirke/janitor/blob/master/man/figures/logo_small.png?raw=true" width="20%" height=10% align="right" /&gt;
+
+&lt;center&gt;
+&lt;img src="https://github.com/allisonhorst/stats-illustrations/raw/master/rstats-artwork/janitor_clean_names.png" width="80%" height=40% align="left" /&gt;
+&lt;/center&gt;
+---
+class: centre, top
+
+# {lubridate}
+&lt;img src="https://github.com/tidyverse/lubridate/raw/master/man/figures/logo.png" width="20%" height=10% align="right" /&gt;
+
+&lt;center&gt;
+&lt;img src="https://github.com/allisonhorst/stats-illustrations/raw/master/rstats-artwork/lubridate_ymd.png" width="80%" height=40% align="left" /&gt;
+&lt;/center&gt;
+---
+class: centre, top
+
+# {ggplot2}
+&lt;img src="https://github.com/tidyverse/ggplot2/raw/master/man/figures/logo.png" width="20%" height=10% align="right" /&gt;
+
+&lt;center&gt;
+&lt;img src="https://github.com/allisonhorst/stats-illustrations/raw/master/rstats-artwork/ggplot2_masterpiece.png" width="80%" height=40% align="left" /&gt;
+&lt;/center&gt;
+
+---
+class: center, top
+
+#Here are some example outputs from R packages:
+&lt;center&gt;
+&lt;img src="https://github.com/allisonhorst/stats-illustrations/raw/master/rstats-artwork/exploder.gif" width="50%" height=25% align="centre" /&gt;
+&lt;/center&gt;
+
+---
+class: left, top
+#Netball Dashboard - {shiny}
+
+Here is an example of a dynamic dashboard that automatically scrapes match statistics from the web and presents them in a structured format.
+
+&lt;img src="https://github.com/edbrooks/R-for-sports-data/raw/master/images/netball_shiny_app.png" width="90%" height=45% align="centre" /&gt;
+
+---
+class: left, top
+
+#Netball Plot - {ggplot2}
+
+Here is an example of a simple score-flow plot that can be produced and customised using ggplot2 in R.
+
+&lt;img src="https://github.com/edbrooks/R-for-sports-data/blob/master/images/R1G1_2019.png?raw=true" width="90%" height=45% align="centre" /&gt;
+
+---
+class: centre, middle
+
+# Welcome to R, let's get started!
+&lt;center&gt;
+&lt;img src="https://github.com/allisonhorst/stats-illustrations/raw/master/rstats-artwork/welcome_to_rstats_twitter.png" width="70%" height=35% align="right" /&gt;
+&lt;/center&gt;
+---
+class: centre, middle
+
+# Today we'll be learning a few basics:
+- Loading packages
+- Using functions
+- Importing data
+- Data wrangling
+- Summary statistics
+- Basic visualisation
+&lt;center&gt;
+&lt;img src="https://github.com/allisonhorst/stats-illustrations/raw/master/rstats-artwork/data_cowboy.png" width="60%" height=30% align="top" /&gt;
+&lt;/center&gt;
+---
+class: center
+
+
+# Acknowledgements 
+
+**Slides using 'xaringan' package ⚔ - credit:[@xieyihui](https://twitter.com/xieyihui)**
+
+https://bookdown.org/yihui/rmarkdown/xaringan.html
+
+&lt;img src="https://user-images.githubusercontent.com/163582/45438104-ea200600-b67b-11e8-80fa-d9f2a99a03b0.png" width="15%" height=10% align="top" /&gt;
+
+**R illustrations - credit: [@allison_horst](https://twitter.com/allison_horst)** 🎨  Artist-in-residence [@RStudio](https://twitter.com/RStudio)
+
+https://github.com/allisonhorst/stats-illustrations
+
+&lt;img src="https://www.allisonhorst.com/post/2019-11-19-rstudio-artist-in-residence/featured_horst_air_hu30ff77530c1fd0633263481c1b3351da_1645822_720x0_resize_lanczos_2.png" width="25%" height=10% align="top" /&gt;
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": true
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
