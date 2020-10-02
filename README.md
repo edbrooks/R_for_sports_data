@@ -2,7 +2,7 @@
 
 ## Overview 💬
 
-This is a very broad introduction to R and R Studio for data analysis and visualisation in sports. A small set of [slides](https://edbrooks.github.io/R-for-sports-data/slides/slides.html#1) can be found in this repository to get you started. There is also some example [code](https://github.com/edbrooks/R-for-sports-data/blob/master/scripts/basics_in_r.R) to step you through some basics, then some more [code](https://github.com/edbrooks/R-for-sports-data/blob/master/scripts/NBA_data_in_r.R) to show some sport specific examples using R and RStudio for [NBA data](https://github.com/edbrooks/R-for-sports-data/tree/master/data). This is intended to jump-start your journey into this vast area which forms an intersection of data science, sport science, statistics, design, and many other disciplines.
+This is a very broad introduction to R and R Studio for data analysis and visualisation in sports. A small set of [slides](https://edbrooks.github.io/R_for_sports_data/slides/slides.html#1) can be found in this repository to get you started. There is also some example [code](https://edbrooks.github.io/R_for_sports_data/blob/master/scripts/basics_in_r.R) to step you through some basics, then some more [code](https://edbrooks.github.io/R_for_sports_data/blob/master/scripts/NBA_data_in_r.R) to show some sport specific examples using R and RStudio for [NBA data](https://edbrooks.github.io/R_for_sports_data/tree/master/data). This is intended to jump-start your journey into this vast area which forms an intersection of data science, sport science, statistics, design, and many other disciplines.
 
 I have collected a few resources that have helped me along the way (so far), and thought it would be useful to keep them all in one place. I'm sure that there are many more amazing sports-related resources out there, so if you think they would fit in here, feel free to contribute. 
 
@@ -161,5 +161,5 @@ A few quick points:
 🏈  &nbsp; &nbsp; 🏀 &nbsp; &nbsp; ⚽ &nbsp; &nbsp; ⚾ &nbsp; &nbsp; 🎾 &nbsp; &nbsp; 🎱 &nbsp; &nbsp; 🏉 &nbsp; &nbsp; 🎳 &nbsp; &nbsp; ⛳ &nbsp; &nbsp; 🏃 &nbsp; &nbsp; 🚴 &nbsp; &nbsp; 🏂 &nbsp; &nbsp; 🏊 &nbsp; &nbsp; 🏈  &nbsp; &nbsp; 🏀 &nbsp; &nbsp; ⚽ &nbsp; &nbsp; ⚾ &nbsp; &nbsp; 
 
 
-![license](https://img.shields.io/github/license/edbrooks/R-for-sports-data) 
+![license](https://img.shields.io/github/license/edbrooks/R_for_sports_data) 
 [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/dwyl/esta/issues) 
