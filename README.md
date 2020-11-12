@@ -85,6 +85,7 @@ A few quick points:
 [@alicesweeting](https://twitter.com/alicesweeting)
 [@mitch_mooney](https://twitter.com/mitch_mooney)
 [@heidithornton09](https://twitter.com/heidithornton09)
+[@alittlefitness](https://twitter.com/alittlefitness)
 [@benbbaldwin](https://twitter.com/benbbaldwin)
 [@jacquietran](https://twitter.com/jacquietran)
 [@mitchhendo](https://twitter.com/mitchhendo)
