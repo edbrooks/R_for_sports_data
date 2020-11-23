@@ -80,6 +80,7 @@ A few quick points:
 **R & Sport**
 
 [@dataandme](https://twitter.com/dataandme)
+[@StatsbyLopez](https://twitter.com/StatsbyLopez)
 [@MeghanMHall](https://twitter.com/MeghanMHall)
 [@MatterOfStats](https://twitter.com/MatterOfStats)
 [@alicesweeting](https://twitter.com/alicesweeting)
