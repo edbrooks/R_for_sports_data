@@ -1,20 +1,24 @@
 #### NBA SPORTS DATA IN R ####
 
-#Remove the '#' symbol at the beginning of the line to allow code to run 
+#Remove the '##' symbol at the beginning of the line to allow code to run in the relevant section 
 #Don't remove the '#' if the line is for a comment (this allows r to skip over)
 
 
 #Install the required packages if you have not used them before
-install.packages("dplyr", #wrangle data using dplyr
-                "ggplot2",#visualise/plot data using ggplot2
-                "readr",#read in data
-                "here") #here helps to organise projects in r - easily locate csv
+##install.packages("dplyr", #wrangle data using dplyr
+##                "ggplot2",#visualise/plot data using ggplot2
+##                "readr",#read in data
+##                "here") #here helps to organise projects in r - easily locate csv
 
 #If you have previously installed these packages use library to load them
-library("dplyr",
-        "ggplot2",
-        "readr",
-        "here")
+##library("dplyr",
+##        "ggplot2",
+##        "readr",
+##        "here")
+
+#Open/download package
+if (!require("pacman")) install.packages("pacman") 
+pacman::p_load(dplyr, here, readr, ggplot2)
 
 #Import the data into the environment
 NBA <- readr::read_csv("data/NBA_2017-18_AdvancedStats_Salary.csv", col_names = TRUE)
@@ -55,10 +59,12 @@ class(NBA$Salary)
 #Arrange the Salary data in a descending order to show highest at the top
 highest_paid <- NBA %>% arrange(desc(Salary)) %>% select(Player, Salary)
 
+head(highest_paid)
+
 #Check specific values in dataframe
 NBA %>% filter(Player == "Blake Griffin")
 
-#So, why does he appear in the data frame three times?
+#So, why does he appear in the data frame multiple times?
 #He played for multiple teams in one year, but his Salary was an annual total
                
 #Are the most minutes given to the highest paid players?
@@ -66,7 +72,7 @@ NBA %>% filter(Player == "Blake Griffin")
 #Check the correlation between MP (minutes played) and Salary
 cor(NBA$MP, NBA$Salary)
                
-# A moderate-strong positive relationship exists between MP and Salary
+# A moderate positive relationship exists between MP and Salary
 
 #Create a subset of data using the filter function to eliminate any players who 
 #didn't play many minutes during the season or had no/low allocated Salary

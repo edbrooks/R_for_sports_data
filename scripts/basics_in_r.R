@@ -61,3 +61,4 @@ dataframe <- data.frame(vector_a, vector_b)
 
 #Print the dataframe to see the structure of the dataframe
 dataframe
+

@@ -1,8 +1,8 @@
 ---
 title: "R for Sports Data"
 subtitle: "⚽️ 🏀 🏈 ⚾️ 🥎 🎾 🏐 🏉 "
-author: "Edward Brooks "
-institute: 
+#author: "Edward Brooks "
+#institute: "Swinburne University" 
 date: 
 output:
   xaringan::moon_reader:
@@ -17,10 +17,9 @@ output:
 ```{r include=FALSE, warning=FALSE}
 #Open/download package
 if (!require("pacman")) install.packages("pacman") 
+remotes::install_github('yihui/xaringan')
 pacman::p_load(tidyverse, here, xaringan, xaringanthemer)
-
 style_mono_accent(base_color = "#23395b")
-
 ``` 
 class: left, top
 # Why R?
