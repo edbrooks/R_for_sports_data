@@ -6,7 +6,7 @@ This is a very broad introduction to R and R Studio for data analysis and visual
 
 I have collected a few resources that have helped me along the way (so far), and thought it would be useful to keep them all in one place. I'm sure that there are many more amazing sports-related resources out there, so if you think they would fit in here, feel free to contribute. 
 
-Enjoy the process and get don't be afraid to get involved in the wider R community (e.g., #rstats, #tidytuesday, etc.)!
+Enjoy the process and don't be afraid to get involved in the wider R community (e.g., #rstats, #tidytuesday, etc.)!
 
 
 <br />
