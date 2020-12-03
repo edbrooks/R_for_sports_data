@@ -138,6 +138,8 @@ A few quick points:
 
 📑 &nbsp; [From Data to Viz - Selecting the most appropriate viz for your data](https://www.data-to-viz.com/) by [@R_Graph_Gallery](https://twitter.com/R_Graph_Gallery)
 
+📑 &nbsp; [A ggplot2 tutorial for beautiful plotting in R](https://cedricscherer.netlify.app/2019/08/05/a-ggplot2-tutorial-for-beautiful-plotting-in-r/) by [@CedScherer](https://twitter.com/CedScherer)
+
 📹 &nbsp; [ISBS Lecture Series - Statistics in Sports Science](https://www.youtube.com/watch?v=LKiX54NglCo) by [@KristinSainani](https://twitter.com/KristinSainani)
 
 📹 &nbsp; [Intro to nflscrapR in the Tidyverse](https://www.youtube.com/watch?v=30RerZLFgUQ) by [@thomas_mock](https://twitter.com/thomas_mock)
