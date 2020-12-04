@@ -2,13 +2,15 @@
 
 ## Overview 💬
 
-This is a very broad introduction to R and R Studio for data analysis and visualisation in sports. A small set of [slides](slides/slides.html) can be found in this repository to get you started. There is also some example [code](scripts/basics_in_r.R) to step you through some basics, then some more [code](scripts/NBA_data_in_r.R) to show some sport specific examples using R and RStudio for [NBA data](data/NBA_2017-18_AdvancedStats_Salary.csv). This is intended to jump-start your journey into this vast area which forms an intersection of data science, sport science, statistics, design, and many other disciplines.
+This is a very broad introduction to R and R Studio for data analysis and visualisation in sports. A small set of [slides](/slides/slides.html) can be found in this repository to get you started. There is also some example [code](/scripts/basics_in_r.R) to step you through some basics, then some more [code](/scripts/NBA_data_in_r.R) to show some sport specific examples using R and RStudio for [NBA data](/data/NBA_2017-18_AdvancedStats_Salary.csv). This is intended to jump-start your journey into this vast area which forms an intersection of data science, sport science, statistics, design, and many other disciplines.
 
 I have collected a few resources that have helped me along the way (so far), and thought it would be useful to keep them all in one place. I'm sure that there are many more amazing sports-related resources out there, so if you think they would fit in here, feel free to contribute. 
 
 Enjoy the process and don't be afraid to get involved in the wider R community (e.g., #rstats, [#tidytuesday](https://github.com/rfordatascience/tidytuesday), etc.)!
 
-
+{% raw %}
+<button onclick="window.open('/slides/slides.html')">Download</button>
+{% endraw %}
 <br />
 
 ## Data from specific sports or leagues 🏟️
