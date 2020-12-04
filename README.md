@@ -8,9 +8,8 @@ I have collected a few resources that have helped me along the way (so far), and
 
 Enjoy the process and don't be afraid to get involved in the wider R community (e.g., #rstats, [#tidytuesday](https://github.com/rfordatascience/tidytuesday), etc.)!
 
-{% raw %}
 <button onclick="window.open('/slides/slides.html')">Download</button>
-{% endraw %}
+
 <br />
 
 ## Data from specific sports or leagues 🏟️
