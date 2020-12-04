@@ -82,7 +82,6 @@ A few quick points:
 [@dataandme](https://twitter.com/dataandme)
 [@StatsbyLopez](https://twitter.com/StatsbyLopez)
 [@MeghanMHall](https://twitter.com/MeghanMHall)
-[@MatterOfStats](https://twitter.com/MatterOfStats)
 [@alicesweeting](https://twitter.com/alicesweeting)
 [@mitch_mooney](https://twitter.com/mitch_mooney)
 [@heidithornton09](https://twitter.com/heidithornton09)
@@ -121,6 +120,7 @@ A few quick points:
 [@lakens](https://twitter.com/lakens)
 [@ChelseaParlett](https://twitter.com/ChelseaParlett)
 [@MT_statistics](https://twitter.com/MT_statistics)
+[@MatterOfStats](https://twitter.com/MatterOfStats)
 
 <br />
 
