@@ -1,0 +1,21 @@
+<head>
+
+<!-- Twitter cards -->
+<meta name="twitter:site"    content="@Ed_R_Brooks">
+<meta name="twitter:creator" content="@Ed_R_Brooks">
+<meta name="twitter:title"   content="R for Sports Data">
+ 
+{% if page.summary %}
+<meta name="twitter:description" content="Repository of sports-related resources and links for R!">
+{% else %}
+<meta name="twitter:description" content="{{ site.description }}">
+{% endif %}
+
+{% if page.image %}
+<meta name="twitter:card"  content="summary_large_image">
+<meta name="twitter:image" content="{{https://images.unsplash.com/photo-1519743375942-b497d66b1e8f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1267&q=80}}{{ page.image }}">
+{% else %}
+<meta name="twitter:card"  content="summary">
+<meta name="twitter:image" content="{{ site.title_image }}">
+{% endif %}
+<!-- end of Twitter cards -->
