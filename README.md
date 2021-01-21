@@ -167,3 +167,6 @@ A few quick points:
 
 ![license](https://img.shields.io/github/license/edbrooks/R_for_sports_data) 
 [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/dwyl/esta/issues) 
+
+
+<meta name="twitter:image" content="https://github.com/edbrooks/R_for_sports_data/blob/main/images/stadium.png">
