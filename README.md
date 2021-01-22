@@ -170,3 +170,4 @@ A few quick points:
 
 
 <meta name="twitter:image" content="https://github.com/edbrooks/R_for_sports_data/blob/main/images/stadium.png">
+<meta name="twitter:imagecredit" content="https://unsplash.com/@geelongaerialphotography">
